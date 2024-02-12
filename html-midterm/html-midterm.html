@@ -1,14 +1,15 @@
-<html>
-<head>
-    
-    <html language="en">
-    
+<!DOCTYPE html> <!-- error 1 -->
+<html lang="en"> <!-- error 2 -->
+<head><!-- error 3 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error-Filled Page</title>
-    
+</head> <!-- error 4 -->
+
 <body>
-    <h1>Welcome to My Error-Filled Page
+    <h1>Welcome to My Error-Filled Page </h1> <!-- error 5 -->
     
-    This is a paragraph with mismatched tags and missing closing tags.</p>
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p><!-- error 6 -->
     
     <ol>
         <li>Item 1</li>
@@ -21,13 +22,13 @@
         <li>Item 8</li>
         <li>Item 9</li>
         <li>Item 10</li>
-    </ul>
+    </ol><!-- error 7 -->
 
-    <p>This is another paragraph without proper indentation.
+    <p>This is another paragraph without proper indentation.</p> <!-- error 8 -->
     
-    <img src="image.jpg">
+    <img src="image.jpg" alt="a meme"> <!-- error 9 -->
 
-    <a href="https://www.example.com" target="_blank">Click me!</img>
+    <a href="https://www.example.com" target="_blank">Click me!</a> <!-- error 10 -->
 
     <table>
         <tr>
@@ -35,31 +36,56 @@
             <th>Age</th>
         </tr>
         <tr>
-            <td>John</td>
-            <td>25<td>
+            <td>John</td> 
+            <td>25</td><!-- error 11 -->
         </tr>
         <tr>
             <td>Jane</td>
             <td>30</td>
         </tr>
+    </table> <!-- error 12 -->
     
-    <img source="error.jpeg" alt="Error Image">
+    <img src="error.jpeg" alt="Error Image"> <!-- error 13 -->
 
-    <center>This is centered text.</center>
-
-    <p bgcolor="lightgray">Text</p>
+    <p style="text-align:center;">This is centered text.</p> <!-- error 14 -->
+ 
+    <p style="background-color: lightgray;">Text</p> <!-- error 15 -->
 
     <input type="button" value="Click me">
 
-    <!-- This is an unclosed comment
+    <!-- This is an unclosed comment --> <!-- error 16 -->
 
-    <a href="#">Link without closing tag
 
-    <p><em>Underlined text</p></em>
+    <a href="#">Link without closing tag </a> <!-- error 17 -->
+
+    <p><u>Underlined text</u></p> <!-- error 18 -->
 
     <dl>
-        <li>Descriptive Item Title</li>
-        <li>Descriptive Item Text</li>
+        <dt>Descriptive Item Title</dt> <!-- error 19 -->
+        <dd>Descriptive Item Text</dd> <!-- error 20 -->
     </dl>
-</body>
+    <ol>
+        <li>Error 1: Important to add Doctype in the beginnig of the code.  </li>
+        <li>Error 2:Have "lang" instead of language in the htlm tag</li>
+        <li>Error 3: Place the head tag after html lang</li>
+        <li>Error 4: No closing head tag</li>
+        <li>Error 5 no closing h1 tag</li>
+        <li>Error 6: no opening paragraph tag </li>
+        <li>Error 7: the ordered list has the wrong closing tag, it should ol, not ul</li>
+        <li>Error 8: no closing paragraph</li>
+        <li>Error 9: no alt tag, and no description for the image </li>
+        <li>Error 10: instead of closing img tag for the hyper link it supposed to be "a" closing ta </li>
+        <li>Error 11: close the td tag properly</li>
+        <li> Error 12:table closing tag</li>
+        <li> Error 13: instead of writing source write src in the image </li>
+        <li> Error 14:add CSS to center the text</li>
+        <li> Error 15: add CSS instead of bdg color </li>
+        <li>Error 16:closing line on the comment</li>
+        <li>Error 17: added a closing a tag to the link </li>
+        <li>Error 18: Used u tag instead of em and put closing p tag in the end </li>
+        <li>Error 19: Change li tag to dt for title </li>
+        <li> Error 20: Change li tag to dd for the description of the title</li>
+    </ol>
+    </body>
 </html>
+
