@@ -1,0 +1,63 @@
+body{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CCCCCC;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    background-color: #FA5F55;
+}
+
+h1 {
+    font-family: cursive;
+    color: #000080;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    font-size: 17px;
+    
+}
+
+nav a:hover{
+    font-size: 30px;
+    color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+img{
+    width:50vw;
+    height: 50vh;
+}
+
+#black-ball{
+    background-color: black;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    animation: bounce 2s infinite; 
+}
+@keyframes bounce{
+    from {
+      margin: 0;
+    }
+    50% {
+      bottom: 28%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
