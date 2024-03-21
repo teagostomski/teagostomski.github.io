@@ -9,7 +9,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText= "It was 94 fahrenheit outside, so the :insertx: went for a swim. When he :inserty: into the ocean, he go scared. The :insertx: saw Bob dancing with a :insertz:. The fish saw the whole thing, but was not surprised — Bob weighs 300 pounds, and she have shpilkes."
+const storyText= "It was 94 fahrenheit outside, so the :insertx: went for a swim. When he :inserty: into the ocean, he got scared. The :insertx: saw Bob dancing with a :insertz:. The fish saw the whole thing, but was not surprised — Bob weighs 300 pounds, and she have shpilkes."
 const insertx = ["duck","farmer","goblin"]
 const inserty = ["jumped","canon balled","dove","walked","crawled"]
 
