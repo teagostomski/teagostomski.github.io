@@ -23,13 +23,16 @@ class Ball {
     this.velY = velY;
     this.color = color;
     this.size = size;
+    this.isVisible = true; //.. When loading the webiste the ball should be drawn
   }
 
   draw() {
-    ctx.beginPath();
-    ctx.fillStyle = this.color;
-    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
-    ctx.fill();
+    if (this.isVisible) {
+      ctx.beginPath();
+      ctx.fillStyle = this.color;
+      ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+      ctx.fill();
+    }
   }
 
   update() {
@@ -42,6 +45,22 @@ class Ball {
 
     this.x += this.velX;
     this.y += this.velY;
+  }
+
+  collisionDetect() {
+    for (const otherBall of balls) {
+      if (this !== otherBall) {
+        const dx = this.x - otherBall.x;
+        const dy = this.y - otherBall.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        const collisionThreshold = this.size + otherBall.size;
+
+        if (distance < collisionThreshold) {
+          this.isVisible = false; 
+          otherBall.isVisible = false; 
+        }
+      }
+    }
   }
 }
 
@@ -68,6 +87,7 @@ function loop() {
   for (const ball of balls) {
     ball.draw();
     ball.update();
+    ball.collisionDetect();
   }
 
   requestAnimationFrame(loop);
