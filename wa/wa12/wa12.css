@@ -80,7 +80,6 @@ html {
     background-color: #0000CD;
   }
  
-
 .twitter.button.post {
     background-image: linear-gradient(to right, #cd486b, #fbad50);
     width: 40%;
@@ -89,7 +88,7 @@ html {
 }
 
 .twitter.button.post:hover {
-    background-image: linear-gradient(to right, #ffafbd, #ffc3a0); /* Same gradient for hover state */
+    background-image: linear-gradient(to right, #ffafbd, #ffc3a0); 
 }
   .new-quote {
     background-color: #228B22;
