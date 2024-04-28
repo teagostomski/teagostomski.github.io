@@ -3,8 +3,8 @@ body {
     text-transform: uppercase;
 }
 img{
-    width: 15vh;
-    height: 15vw;
+    width: 15vw;
+    height: 15vh;
     margin-left: 45vw;
     }
 
@@ -30,16 +30,22 @@ img{
     cursor: pointer;
     animation: moveNumber 2s infinite alternate;
     border-radius: 50%;
-    border: 0.001vw solid black;
+    border: 0.001 vw solid black;
 }
 .number:hover {
-    color: lightgray;
+    background-color:#D6FFFF;
+    font-size: large;
 }
 .button {
     width: 10vw;
     height: 5vh;
-    margin: 2vh auto; 
-    background-color: pink;
+    margin: 2vw auto; 
+    background-color: #ffb3cb;
     color: black;
     display: block;
+}
+
+.button:hover {
+    background-color:#ffc6ef;
+
 }
