@@ -2,7 +2,6 @@ const numbersContainer = document.getElementById('numbers');
 const resultContainer = document.getElementById('result');
 let selectedNumbers = [];
 
-// Generate numbers from 0 to 9 
 for (let i = 0; i < 10; i++) {
     const number = document.createElement('div');
     number.classList.add('number');
@@ -40,7 +39,7 @@ function moveNumbers() {
     numbers.forEach(number => {
         const translation = getRandomTranslation();
         number.style.transition = 'transform 1s ease'; 
-        number.style.transform = `translate(${translation.x}vw, ${translation.y}vh)`; // Use vw and vh units
+        number.style.transform = `translate(${translation.x}vw, ${translation.y}vh)`; 
     });
 }
 

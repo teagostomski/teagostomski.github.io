@@ -30,16 +30,16 @@ img{
     cursor: pointer;
     animation: moveNumber 2s infinite alternate;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 0.001vw solid black;
 }
 .number:hover {
     color: lightgray;
 }
 .button {
-    width: 10vw; /* Adjust the width as needed */
+    width: 10vw;
     height: 5vh;
-    margin: 2vh auto; /* Center the button horizontally and add vertical margin */
+    margin: 2vh auto; 
     background-color: pink;
     color: black;
-    display: block; /* Ensure the button behaves as a block element */
+    display: block;
 }
