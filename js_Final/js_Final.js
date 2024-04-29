@@ -43,5 +43,5 @@ function moveNumbers() {
     });
 }
 
-// Call moveNumbers function every second to animate the numbers
+// Call moveNumbers function every second and a half to animate the numbers
 setInterval(moveNumbers, 1500);
