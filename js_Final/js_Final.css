@@ -8,9 +8,12 @@ img{
     margin-left: 45vw;
     }
 
+p {
+    text-align: center;
+}
+
 .container {
-    width: 35vw; 
-    height: 33vh; 
+    width: 38vw;
     margin: 0 auto; 
     background-color: #ADD8E6;
 }
@@ -47,5 +50,17 @@ img{
 
 .button:hover {
     background-color:#ffc6ef;
-
 }
+
+p {
+	animation: rainbow 3s linear infinite;
+}
+@keyframes rainbow {
+    0% { color: #ff0000; }
+    17% { color: #ff7f00; }
+    34% { color: #ffff00; }
+    51% { color: #00ff00; }
+    68% { color: #0000ff; }
+    85% { color: #4b0082; }
+    100% { color: #8f00ff; }
+  }
