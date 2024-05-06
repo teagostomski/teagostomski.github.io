@@ -10,6 +10,8 @@ for (let i = 0; i < 10; i++) {
     numbersContainer.appendChild(number);
 }
 
+
+
 // Function to select a number
 function selectNumber(number) {
     const index = selectedNumbers.indexOf(number);
@@ -24,6 +26,11 @@ function selectNumber(number) {
 function submitVolume() {
     const volume = selectedNumbers.join('');
     resultContainer.textContent = `Your volume is now: ${volume}`;
+}
+
+function resetVolume() {
+    selectedNumbers = [];
+    resultContainer.textContent = `Your Volume is now: 0`;
 }
 
 //  code for moving numbers smooth

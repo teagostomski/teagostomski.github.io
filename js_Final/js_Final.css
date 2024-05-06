@@ -10,12 +10,13 @@ img{
 
 p {
     text-align: center;
+    font-size: 200%;
 }
 
 .container {
     width: 38vw;
     margin: 0 auto; 
-    background-color: #ADD8E6;
+    background-color: #E4F6F8 ;
 }
 .numbers {
     display: flex;
@@ -33,7 +34,7 @@ p {
     cursor: pointer;
     animation: moveNumber 2s infinite alternate;
     border-radius: 50%;
-    border: 0.001 vw solid black;
+    border: 0.05vw solid black;
 }
 .number:hover {
     background-color:#D6FFFF;
@@ -43,14 +44,34 @@ p {
     width: 10vw;
     height: 5vh;
     margin: 2vw auto; 
-    background-color: #ffb3cb;
+    background-color: #b8d8be;
     color: black;
     display: block;
 }
 
 .button:hover {
-    background-color:#ffc6ef;
+    background-color: #e8f4ea;
 }
+
+.reset-button {
+    width: 10vw;
+    height: 5vh;
+    margin: 1vw auto; 
+    background-color:#ff6961;
+    color: black;
+    display: block;
+}
+
+.reset-button:hover {
+    background-color:#ffcccc;
+}
+
+#result {
+    margin-top: 5%;
+    margin-left: 39%; 
+    font-size: x-large;
+}
+
 
 p {
 	animation: rainbow 3s linear infinite;
